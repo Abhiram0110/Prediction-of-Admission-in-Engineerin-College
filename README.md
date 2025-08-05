@@ -1,13 +1,6 @@
 
 
-### 📌 **“Prediction of Engineering Branch Selection for Inter Students”**
-
-Based on everything you've uploaded, here's a **clean, professional `README.md`** file you can **directly copy and paste into your GitHub repository**:
-
----
-
-```markdown
-# 🎓 Prediction of Engineering Branch Selection for Inter Students
+### 📌 **“Prediction of Engineering Branch Selection for Inter Students
 
 This project is designed to assist Intermediate (10+2) students in selecting the most suitable **engineering branch** based on their academic records using **Machine Learning**. It considers marks, interest areas, and trends to predict and recommend the best-fit B.Tech specialization.
 
