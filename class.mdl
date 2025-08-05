@@ -1,0 +1,244 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"619551A70240"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"619551A70242"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"619551A702B0"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"619551A70241"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"619551A70243"
+	logical_models 	(list unit_reference_list
+	    (object Class "User"
+		quid       	"619551AC0154"
+		operations 	(list Operations
+		    (object Operation "register"
+			quid       	"619551C20284"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "login"
+			quid       	"619551C4030E"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "addmarks"
+			quid       	"619551C7023C"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "viewaverage"
+			quid       	"619551CA0389"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "selectbranch"
+			quid       	"619551CF0122"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "logout"
+			quid       	"619551D40255"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "name"
+			quid       	"619551AF02E6")
+		    (object ClassAttribute "email"
+			quid       	"619551B00382")
+		    (object ClassAttribute "mobile"
+			quid       	"619551B10365")
+		    (object ClassAttribute "address"
+			quid       	"619551B40041")
+		    (object ClassAttribute "username"
+			quid       	"619551B501F2")
+		    (object ClassAttribute "password"
+			quid       	"619551B80096")))
+	    (object Class "application"
+		quid       	"619551DB026C"
+		operations 	(list Operations
+		    (object Operation "perfomingoperations"
+			quid       	"619551E70056"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "user"
+			quid       	"619551E303AE")))
+	    (object Association "$UNNAMED$0"
+		quid       	"619551F801FD"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"619551F900D3"
+			supplier   	"Logical View::application"
+			quidu      	"619551DB026C"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"619551F900E1"
+			supplier   	"Logical View::User"
+			quidu      	"619551AC0154"
+			is_navigable 	TRUE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"619551A7024A"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Logical View::User" @1
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(512, 688)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(362, 332)
+			    fill_color 	12058623
+			    nlines     	1
+			    max_width  	300
+			    justify    	0
+			    label      	"User")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"619551AC0154"
+			compartment 	(object Compartment
+			    Parent_View 	@1
+			    location   	(362, 392)
+			    icon_style 	"Icon"
+			    fill_color 	12058623
+			    anchor     	2
+			    nlines     	13
+			    max_width  	297)
+			width      	318
+			height     	736
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::application" @2
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1408, 688)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1196, 582)
+			    fill_color 	12058623
+			    nlines     	1
+			    max_width  	424
+			    justify    	0
+			    label      	"application")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"619551DB026C"
+			compartment 	(object Compartment
+			    Parent_View 	@2
+			    location   	(1196, 642)
+			    icon_style 	"Icon"
+			    fill_color 	12058623
+			    anchor     	2
+			    nlines     	3
+			    max_width  	422)
+			width      	442
+			height     	236
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @3
+			location   	(928, 688)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"619551F801FD"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @4
+				Parent_View 	@3
+				location   	(416, 0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"619551F900D3"
+				client     	@3
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @5
+				Parent_View 	@3
+				location   	(416, 0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"619551F900E1"
+				client     	@3
+				supplier   	@1
+				line_style 	0)))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"619551A70243"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"619551A702AF"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"619551A70244"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"619551A70246"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"619551A70245"))
